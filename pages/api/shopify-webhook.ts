@@ -12,6 +12,7 @@ export default async function handler(
 
   try {
     const order = req.body;
+    console.log(req.body,"body")
     console.log('Order ID:', order?.id);
 
     if (!process.env.ATTIO_API_KEY) {
